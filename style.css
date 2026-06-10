@@ -29,7 +29,7 @@ header {
 }
 
 .logo {
-    width: 30%;
+    width: 180px;
     border: 1px solid #26877f;
     border-radius: 50%;
     box-shadow: 0 0px 10px #26877f;
@@ -88,7 +88,11 @@ nav {
     color: #e3e3e3;
 }
 
-.nav-link:hover {
+.is-active {
+    border-bottom: inset 2px #26877f;
+}
+
+.nav-link:hover, .card-footer:hover {
     font-size: 18px;
     box-shadow: 1px 0px 5px #e3e3e3;
 }
@@ -136,11 +140,12 @@ nav {
 }
 
 .card {
-    width: 30%;
+    width: 20vw;
     text-align: center;
     border-radius: 15px;
     background-color: #333333;
     transition: 0.2s;
+    margin: 0 5px;
 }
 .card:hover {
     box-shadow: 0 0 5px #111111;
@@ -150,20 +155,26 @@ nav {
 }
 .card-body {
     padding: 20px;
-    text-align: left;
     line-height: 1.5;
+}
+
+.card-img {
+    width: 90%;
+    height: 140px;
 }
 .card-footer {
     padding: 15px 10px;
     border-top: 2px solid #26877f;
     text-decoration: none;
+    border-radius: 0 0 10px 10px;
+    transition: 0.2s;
 }
 .card-footer a {
     text-decoration: none;
     color: inherit;
     display: block;
     width: 100%;
-    height: stretch;
+    height: 20px;
 }
 
 footer {
@@ -202,4 +213,21 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+
+/* ------ Products ------ */
+
+.section1 {
+    grid-area: section1;
+    width: 90%;
+    padding: 20px;
+    background-color: antiquewhite;
+    margin: 10px auto;
+}
+
+.section1 h1 {
+    color: #111111;
+    padding: 15px 10px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #111111;
 }
