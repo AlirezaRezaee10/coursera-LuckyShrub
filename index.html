@@ -10,6 +10,7 @@
     <meta name="copyright" content="Copyright 2026">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucky Shrub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -26,6 +27,11 @@
                 <h1>Lucky Shrub</h1>
             </a>
             <nav>
+                <div class="nav-bars">
+                    <input type="checkbox" id="toggle-menu">
+                    <label for="toggle-menu" class="bars"><i class="fa-solid fa-bars"></i></label >
+                    <label for="toggle-menu" class="x"><i class="fa-solid fa-x"></i></label>
+                </div>
                 <ul class="nav-menu">
                     <li class="nav-link is-active"><a href="/">Home</a></li>
                     <li class="nav-link"><a href="/products.html">Products</a></li>
@@ -121,14 +127,17 @@
                 <img src="/img/Asset 1@3x.png" alt="Red Logo">
             </figure>
         </div>
-        <div class="copyright">
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In numquam, adipisci itaque commodi culpa
-                    assumenda error porro.</p>
-                <p> Suscipit dicta repellendus autem beatae saepe, voluptatum facere, ea
-                    consectetur labore, delectus sequi.</p>
+        <div class="footer-right">
+            <div class="footer-links">
+                <a href="/">Home</a>
+                <a href="/contact-us.html">Contact us</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Term of Services</a>
             </div>
-            <p>&copy; 2026 Lucky Shrub. All rights reserved.</p>
+
+            <div class="copyright">
+                <p>&copy; 2026 Lucky Shrub. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 </body>
