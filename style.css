@@ -98,24 +98,25 @@ nav {
     box-shadow: 1px 0px 5px #e3e3e3;
 }
 
-.article1 {
+.article1, .article-column {
     grid-area: section1;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
+    padding: 20px 30px;
     color: wheat;
     border: 1px solid #26877f;
     border-radius: 15px;
     box-shadow: 0 4px 6px #26877f;
+    margin: 10px 0;
 }
 
-.article1 figure {
+.article1 > figure {
     width: 40%;
     padding: 15px;
 }
 
-.article1 figure img {
+.article1 > figure img {
     width: 70%;
     display: block;
     margin: 0 auto;
@@ -244,3 +245,63 @@ footer {
     margin-bottom: 10px;
     border-bottom: 2px solid #111111;
 }
+
+/* ------ About us ------ */
+
+.content-title {
+    text-align: center;
+    font-size: larger;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.we {
+    width: 100%;
+    padding: 15px 0;
+    border-bottom: 2px solid #26877f;
+}
+
+.person {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+ .person-img {
+    width: 400px;
+    height: 400px;
+    color: antiquewhite;
+    text-align: center;
+ }
+
+ .person-img img {
+    width: 90%;
+ }
+
+ .person-description {
+    width: 60%;
+    font-size: 18px;
+ }
+
+ .article-column {
+    width: 100%;
+    /* display: flex; */
+    flex-direction: column;
+    /* justify-content: space-around;
+    align-items: center; */
+ } 
+ .company-description {
+    margin: 10px 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    line-height: 1.2;
+ }
+ .company-description > p {
+    padding: 5px;
+    width: 40%;
+ }
