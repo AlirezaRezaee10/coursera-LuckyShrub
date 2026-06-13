@@ -1,7 +1,4 @@
 @media (max-width: 720px) {
-    .header-right h1 {
-        font-size: 30px;
-    }
     .nav-menu {
         width: 100%;
     }
@@ -45,5 +42,17 @@
 
     .contact-info, .contact-form {
         padding: 20px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 721px){
+    .nav-menu {
+        width: 75%;
+    }
+    .cards {
+        flex-wrap: wrap;
+    }
+    .card {
+        width: 45%;
     }
 }
