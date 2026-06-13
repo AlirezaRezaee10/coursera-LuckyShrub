@@ -6,10 +6,12 @@
 
 body {
     display: grid;
+    width: 100vw;
     gap: 10px;
     grid-template-areas: 'header' 'section1' 'cards' 'footer';
     background-color: #666666;
     color: #e3e3e3;
+    /* overflow: hidden; */
 }
 
 .container {
@@ -18,9 +20,9 @@ body {
 }
 
 header {
-    height: 200px;
-    padding: 0px 10px;
+    height: 260px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     background-color: #2c3e50;
     grid-area: header;
@@ -28,8 +30,17 @@ header {
     align-items: center;
 }
 
+.header-top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 75%;
+}
 .logo {
     width: 180px;
+    position: relative;
+    left: 20px;
     border: 1px solid #26877f;
     border-radius: 50%;
     box-shadow: 0 0px 10px #26877f;
@@ -43,10 +54,11 @@ header {
 
 .header-right {
     text-align: center;
-    display: flex;
+    align-content: center;
+    /* display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: end;
+    align-items: end; */
 }
 
 .header-right > a {
@@ -61,10 +73,11 @@ header {
 }
 
 nav {
-    height: 40%;
+    height: 25%;
     width: 100%;
     align-content: center;
-    padding: 20px;
+    justify-items: end;
+    /* padding: 0 20px; */
     
 }
 
@@ -74,9 +87,9 @@ nav {
     transition: 0.2s;
 }
 
-/* .nav-bars .x {
+.nav-bars .x {
     display: none;
-} */
+}
 
 .nav-bars #toggle-menu {
     display: none;
@@ -92,8 +105,9 @@ nav {
 
 
 .nav-menu {
-    width: 100%;
+    width: 50%;
     list-style: none;
+    text-align: center;
     display: flex;
     flex-direction: row-reverse;
     justify-content: end;
@@ -128,7 +142,7 @@ nav {
     box-shadow: 1px 0px 5px #e3e3e3;
 }
 
-.article1, .article-column {
+.article1, .article2 {
     grid-area: section1;
     display: flex;
     justify-content: space-between;
@@ -178,6 +192,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     margin: 10px 0;
+    padding: 10px;
 }
 
 .card {
@@ -186,7 +201,7 @@ nav {
     border-radius: 15px;
     background-color: #333333;
     transition: 0.2s;
-    margin: 0 5px;
+    margin: 10px 5px;
 }
 .card:hover {
     box-shadow: 0 0 5px #111111;
@@ -279,25 +294,6 @@ footer {
     display: block;
     text-align: left;
 }
-
-/* ------ Products ------ */
-
-/*.section1 {
-    grid-area: section1;
-    width: 90%;
-    padding: 20px;
-    background-color: antiquewhite;
-    background-color: #2c3e50;
-    margin: 10px auto;
-}
-
-.section1 h1 {
-    /* color: #111111; 
-    padding: 15px 10px;
-    margin-bottom: 10px;
-    border-bottom: 2px solid #26877f;
-} */
-
 /* ------ About us ------ */
 
 .content-title {
@@ -319,7 +315,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
+    margin: 10px 0;
 }
  .person-img {
     width: 400px;
@@ -337,12 +333,9 @@ footer {
     font-size: 18px;
  }
 
- .article-column {
+ .article2 {
     width: 100%;
-    /* display: flex; */
     flex-direction: column;
-    /* justify-content: space-around;
-    align-items: center; */
  } 
  .company-description {
     margin: 10px 0;
@@ -355,6 +348,7 @@ footer {
  }
  .company-description > p {
     padding: 5px;
+    margin: 5px 0;
     width: 40%;
  }
 
@@ -499,70 +493,3 @@ footer {
 }
 
 /* Responsive Design */
-@media (max-width: 720px) {
-    * {
-        flex-direction: column;
-        /* z-index: -1; */
-    }
-    header {
-        flex-direction: row;
-    }
-    .header-left {
-        /* width: 100%;
-        justify-items: center; */
-    }
-    .header-right {
-        flex-direction: row !important;
-        justify-content: center;
-        align-items: start;
-    }
-
-    .header-right > a {
-        /* display: none; */
-        margin: auto 0;
-    }
-    .header-right nav {
-        justify-items: end;
-    }
-    .nav-bars > .bars {
-        display: block;
-        /* position: absolute;
-        z-index: 10; */
-    }
-
-    .nav-menu {
-        display: none;
-        height: 66vh;
-        width: 100vw;
-        /* z-index: 1000; */
-        flex-direction: column;
-        justify-content: end;
-        align-items: center;
-        position: absolute;
-        right: 0;
-        top: 0;
-        background-color: #111111;
-        transition: 0.2s;
-    }
-    .nav-link {
-        width: 100%;
-        height: 20%;
-        border-bottom: 1px solid #26877f;
-        padding: 15px 20px;
-        z-index: 9;
-        background-color: #0077b5;
-    }
-
-    #toggle-menu:checked .nav-menu {
-        display: block;
-    }
-}
-/* @media (max-width: 768px) { */
-    .contact-container {
-        flex-direction: column;
-    }
-    
-    .contact-info, .contact-form {
-        padding: 30px;
-    }
-/* } */

@@ -1,0 +1,29 @@
+@media (max-width: 720px) {
+    .nav-menu {
+        width: 100%;
+    }
+
+    .nav-link {
+        border-left: 1px solid #26877f;
+        border-right: 1px solid #26877f;
+    }
+   
+    /* ------ main ------ */
+
+    .article1, .cards, footer, .company-description, .person {
+        flex-direction: column;
+    }
+
+    .article1 > figure, .article1-text, .card, .footer-left, .footer-right, .company-description > p {
+        width: 100%;
+    }
+
+    .footer-left, .footer-right {
+        height: 50%;
+    }
+
+    .footer-right {
+        flex-direction: row-reverse;
+        align-items: end;
+    }
+}
