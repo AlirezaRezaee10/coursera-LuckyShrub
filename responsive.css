@@ -1,4 +1,7 @@
 @media (max-width: 720px) {
+    .header-right h1 {
+        font-size: 30px;
+    }
     .nav-menu {
         width: 100%;
     }
@@ -14,7 +17,7 @@
         flex-direction: column;
     }
 
-    .article1 > figure, .article1-text, .card, .footer-left, .footer-right, .company-description > p {
+    .article1 > figure, .article1-text, .card, .footer-left, .footer-right, .company-description > p, .contact-form, .jason-maria, .person {
         width: 100%;
     }
 
@@ -25,5 +28,22 @@
     .footer-right {
         flex-direction: row-reverse;
         align-items: end;
+    }
+
+    /* ------ About us ------ */
+
+    .person-img {
+        border: 1px solid #26877f;
+        border-radius: 15px;
+        margin: 10px 0;
+    }
+    /* .person-img img {
+        width: 100%;
+    } */
+
+    /* ------ Contact us ------ */
+
+    .contact-info, .contact-form {
+        padding: 20px;
     }
 }

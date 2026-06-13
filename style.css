@@ -318,8 +318,7 @@ footer {
     margin: 10px 0;
 }
  .person-img {
-    width: 400px;
-    height: 400px;
+    max-width: 300px;
     color: antiquewhite;
     text-align: center;
  }
