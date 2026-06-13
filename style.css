@@ -8,9 +8,13 @@ body {
     display: grid;
     width: 100vw;
     gap: 10px;
-    grid-template-areas: 'header' 'section1' 'cards' 'footer';
+    grid-template-areas: 'header' 'main' 'footer';
     background-color: #666666;
     color: #e3e3e3;
+}
+
+main {
+    grid-area: main;
 }
 
 .container {
@@ -116,7 +120,6 @@ nav {
 }
 
 .article1, .article2 {
-    grid-area: section1;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -158,7 +161,6 @@ nav {
 }
 
 .cards {
-    grid-area: cards;
     width: 100%;
     display: flex;
     justify-content: space-around;
